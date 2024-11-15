@@ -3,3 +3,6 @@ venv/
 target/
 dbt_packages/
 logs/
+.env
+dbtcore-441813-e75f12cb8e00.json
+dbtcore-441813-e75f12cb8e00.json:Zone.Identifier

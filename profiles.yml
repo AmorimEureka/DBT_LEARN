@@ -1,0 +1,14 @@
+dbt_learn:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: dbtcore-441813
+      dataset: "{{ env_var( 'DBT_NAME' , 'dbt_learn') }}"
+      threads: 4
+      keyfile: /home/rafaelamorim/repo/dbt_udemy/dbt_learn/dbtcore-441813-e75f12cb8e00.json
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      # location: US
+      priority: interactive
